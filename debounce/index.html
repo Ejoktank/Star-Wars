@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <!-- У формы есть атрибут action, который будет работать,
+    если пользователи отключили скрипты. -->
+    <form action="/some-route" method="GET" id="search-form">
+      <label>Найди любимую пиццу:</label>
+
+      <!-- Используем input с типом search,
+      чтобы браузеры делали дополнительную магию
+      с автозаполнением и подходящими кнопками
+      на телефонных клавиатурах. -->
+      <input type="search" name="query" placeholder="Маргарита" />
+
+      <!-- У кнопки тип проставлять необязательно,
+      так как submit — это тип кнопки по умолчанию. -->
+      <button>Искать!</button>
+    </form>
+
+    <ul class="search-results"></ul>
+  </body>
+</html>
